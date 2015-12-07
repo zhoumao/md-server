@@ -14,7 +14,8 @@
     "connect": "~2.7.6",
     "tiny-lr": "~0.0.4",
     "color-marked": "~0.3.3",
-    "open": "0.0.4"
+    "open": "0.0.5",
+    "opener": "1.4.1"
   },
   "keywords": [
     "markdown",

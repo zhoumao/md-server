@@ -78,6 +78,8 @@ app.use(connect.query())
           res.end(out);
         })
       });
+    }else if(req.url === '/shutdown'){
+        process.exit();
     }else{
       next();
     }
@@ -86,5 +88,6 @@ app.use(connect.query())
   console.log("server listening on port " + port);
 });
 
-open('http://localhost:' + port + '/md');
+// doesn't work with my installation of chrome somehow
+open('http://localhost:' + port + '/md', 'firefox');
 
